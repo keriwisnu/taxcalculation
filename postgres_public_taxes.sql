@@ -1,0 +1,3 @@
+INSERT INTO public.taxes (id, name, taxcode, price, "createdAt", "updatedAt") VALUES ('0a76e096-8e98-4216-9325-c5a28e51d781', 'Big Mac', '1', 1000, '2021-11-30 02:47:38.180000', '2021-11-30 02:47:38.180000');
+INSERT INTO public.taxes (id, name, taxcode, price, "createdAt", "updatedAt") VALUES ('486daa14-1f91-48fd-a030-c8c56bab5873', 'Lucky Strech', '2', 1000, '2021-11-30 03:05:53.807000', '2021-11-30 03:05:53.807000');
+INSERT INTO public.taxes (id, name, taxcode, price, "createdAt", "updatedAt") VALUES ('7af67dbb-6ad2-4592-bd9b-ba759f029032', 'Movie', '3', 150, '2021-11-30 03:06:17.629000', '2021-11-30 03:06:17.629000');

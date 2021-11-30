@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "9956d44d-2775-43ed-bc3b-00e62c632096",
+		"name": "taxCalculation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Big Mac\",\n    \"taxcode\": \"1\",\n    \"price\": 1000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/taxes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taxes"
+					]
+				},
+				"description": "test"
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/taxes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taxes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

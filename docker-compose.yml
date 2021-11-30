@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  database:
+    image: "postgres"
+    container_name: postgres
+    networks:
+      - network_tax
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+  node-app:
+    build: .
+    container_name: node-app
+    networks:
+      - network_tax
+    ports:
+      - 3000:3000
+    environment:
+      WAIT_HOSTS: "postgres:5432"
+      POSTGRES_HOST: database
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+networks:
+  network_tax:
